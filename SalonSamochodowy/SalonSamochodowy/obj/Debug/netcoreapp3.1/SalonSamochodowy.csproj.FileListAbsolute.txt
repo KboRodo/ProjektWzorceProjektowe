@@ -4,10 +4,10 @@ C:\Users\qubak\Documents\Uni\c#\WzorceProjektowe\ProjektWzorceProjektowe\SalonSa
 C:\Users\qubak\Documents\Uni\c#\WzorceProjektowe\ProjektWzorceProjektowe\SalonSamochodowy\SalonSamochodowy\bin\Debug\netcoreapp3.1\SalonSamochodowy.runtimeconfig.dev.json
 C:\Users\qubak\Documents\Uni\c#\WzorceProjektowe\ProjektWzorceProjektowe\SalonSamochodowy\SalonSamochodowy\bin\Debug\netcoreapp3.1\SalonSamochodowy.dll
 C:\Users\qubak\Documents\Uni\c#\WzorceProjektowe\ProjektWzorceProjektowe\SalonSamochodowy\SalonSamochodowy\bin\Debug\netcoreapp3.1\SalonSamochodowy.pdb
-C:\Users\qubak\Documents\Uni\c#\WzorceProjektowe\ProjektWzorceProjektowe\SalonSamochodowy\SalonSamochodowy\obj\Debug\netcoreapp3.1\SalonSamochodowy.csprojAssemblyReference.cache
 C:\Users\qubak\Documents\Uni\c#\WzorceProjektowe\ProjektWzorceProjektowe\SalonSamochodowy\SalonSamochodowy\obj\Debug\netcoreapp3.1\SalonSamochodowy.AssemblyInfoInputs.cache
 C:\Users\qubak\Documents\Uni\c#\WzorceProjektowe\ProjektWzorceProjektowe\SalonSamochodowy\SalonSamochodowy\obj\Debug\netcoreapp3.1\SalonSamochodowy.AssemblyInfo.cs
 C:\Users\qubak\Documents\Uni\c#\WzorceProjektowe\ProjektWzorceProjektowe\SalonSamochodowy\SalonSamochodowy\obj\Debug\netcoreapp3.1\SalonSamochodowy.csproj.CoreCompileInputs.cache
 C:\Users\qubak\Documents\Uni\c#\WzorceProjektowe\ProjektWzorceProjektowe\SalonSamochodowy\SalonSamochodowy\obj\Debug\netcoreapp3.1\SalonSamochodowy.dll
 C:\Users\qubak\Documents\Uni\c#\WzorceProjektowe\ProjektWzorceProjektowe\SalonSamochodowy\SalonSamochodowy\obj\Debug\netcoreapp3.1\SalonSamochodowy.pdb
 C:\Users\qubak\Documents\Uni\c#\WzorceProjektowe\ProjektWzorceProjektowe\SalonSamochodowy\SalonSamochodowy\obj\Debug\netcoreapp3.1\SalonSamochodowy.genruntimeconfig.cache
+C:\Users\qubak\Documents\Uni\c#\WzorceProjektowe\ProjektWzorceProjektowe\SalonSamochodowy\SalonSamochodowy\obj\Debug\netcoreapp3.1\SalonSamochodowy.csprojAssemblyReference.cache
