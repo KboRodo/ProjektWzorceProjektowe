@@ -58,11 +58,15 @@ namespace SalonSamochodowy
         {
             Console.Clear();
             Console.WriteLine("Lista stworzonych samochodów");
+            int licznik = 1;
             foreach (Samochod item in samochodyLista)
             {
                Parametry param = item.stworzSamochod();
-               Console.WriteLine(param.zwroc());
+               String[] parametry=param.zwroc();
+                Console.WriteLine($"{licznik}. {parametry[0]}, {parametry[1]}zł ");
+                licznik++;
             }
+            Console.WriteLine(" ");
         }
         public static Samochod dodajSamochod()//f-cja dodajaca samochod
         {
