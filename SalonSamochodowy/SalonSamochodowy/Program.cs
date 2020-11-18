@@ -13,7 +13,7 @@ namespace SalonSamochodowy
 
             Console.WriteLine("Witaj w Salonie Samochodowym");
             bool menuon = true;
-            List<Samochod> samochodyLista = new List<Samochod>();
+            List<Opcje> samochodyLista = new List<Opcje>();
 
             while (menuon)
 {
@@ -27,9 +27,11 @@ namespace SalonSamochodowy
                 {
                     case "s":
                         Console.Clear();
-                        samochodyLista.Add(dodajSamochod());
-                        //opcjawBudowie();
-                        //statement
+                        Samochod samochod = dodajSamochod();
+                        Parametry typSamochodu = samochod.stworzSamochod();
+                        Opcje samochodLakier = wybierzKolor(typSamochodu);
+                        Opcje samochodAkcesoria =wybierzAkcesoria(samochodLakier);
+                        samochodyLista.Add(samochodAkcesoria);
                         break;
 
                     case "u":
@@ -54,22 +56,21 @@ namespace SalonSamochodowy
 
 
         }
-        public static void pokazSamochodyLista(List<Samochod> samochodyLista)//f-cja wyswietlajaca wszystkie samochody
+        public static void pokazSamochodyLista(List<Opcje> samochodyLista)//f-cja wyswietlajaca wszystkie samochody
         {
             Console.Clear();
             Console.WriteLine("Lista stworzonych samochodów");
             int licznik = 1;
-            foreach (Samochod item in samochodyLista)
+            foreach (Opcje item in samochodyLista)
             {
-               Parametry param = item.stworzSamochod();
-               String[] parametry=param.zwroc();
-                Console.WriteLine($"{licznik}. {parametry[0]}, {parametry[1]}zł ");
+                Console.WriteLine($"{licznik}. {item.zwrocNazwa()}, {item.zwrocCena()}zł ");
                 licznik++;
             }
             Console.WriteLine(" ");
         }
         public static Samochod dodajSamochod()//f-cja dodajaca samochod
         {
+            // var samochod=new fotele(new czerwoy(new suv())));
             Samochod nowySamochod=null;
 
             Console.WriteLine("Wybierz rodzaj samochodu");
@@ -93,7 +94,96 @@ namespace SalonSamochodowy
 
             }
             return nowySamochod;
+
+        }
+        public static Opcje wybierzKolor(Parametry samochod)
+        {
+            Console.Clear();
+            Console.WriteLine($"Obecna konfiguracja :{samochod.zwrocNazwa()}, cena:{samochod.zwrocCena()}zł");
+            Console.WriteLine("Wybierz kolor lakieru");
+            Console.WriteLine("Q-Biały (kolor domyślny) + 0zł");
+            Console.WriteLine("W-Czarny + 2000zł");
+            Console.WriteLine("E-Srebrny + 3500zł");
+            Console.WriteLine("R-Czerwony + 5000zł");
+            //SWITCH CASE LAKIERY
+            Opcje lakier = new Bialy(samochod);
+            
+            string opcja = Console.ReadLine();
+            switch (opcja)
+            {
+                case "q":
+                    // nowySamochod = Samochod.wybierzSamochod(TYP.SUV); funkcja która dodaje lakier
+                    break;
+                case "w":
+                    lakier = new Czarny(samochod);
+                    break;
+                case "e":
+                    lakier = new Srebrny(samochod);
+                    break;
+                case "r":
+                    lakier = new Czerwony(samochod);
+                    break;
+                default:
+                    
+                    break;
+
+            }
+            return lakier;
+        }
+        public static Opcje wybierzAkcesoria(Opcje samochod)
+        {
+            Console.Clear();
+            Console.WriteLine($"Obecna konfiguracja :{samochod.zwrocNazwa()}, cena:{samochod.zwrocCena()}zł");
+            Console.WriteLine("Wybierz kolor lakieru");
+            Console.WriteLine("Q-Opony Zimowe + 2000zł");
+            Console.WriteLine("W-Bagażnik Na Rowery + 1000zł");
+            Console.WriteLine("E-Podgrzewane Fotele + 3500zł");
+            Console.WriteLine("R-Zakończ Dobieranie");
+            //SWITCH CASE LAKIERY
+            Opcje akcesoria = new Bialy(samochod);
+
+            string opcja = Console.ReadLine();
+            
+            
+                switch (opcja)
+                {
+                    case "q":
+                        akcesoria = new OponyZimowe(samochod);
+
+                        break;
+                    case "w":
+                        akcesoria =new BagaznikNaRowery(samochod);
+                        break;
+                    case "e":
+                        akcesoria = new PodgrzewaneFotele(samochod);
+                        break;
+                    case "r":
+                        break;
+                    default:  
+                        break;
+
+                }
+
+            Console.WriteLine("Czy chcesz dodać kolejne opcje Y/N ?");
+            string opcja2 = Console.ReadLine();
+            switch (opcja2)
+            {
+                case "y":
+                    wybierzAkcesoria(akcesoria);
+                    break;
+
+                case "n":
+                    Console.WriteLine($"Koniec konfiguracji, twoja konfiguracja to: {akcesoria.zwrocNazwa()}, cena to {akcesoria.zwrocCena()} zł");
+                    break;
+                default:
+                    Console.WriteLine("Nie ma takiej opcji !!!");
+                    break;
+            }
+            //OPONY ZIMOWE 2000ZŁ
+            //BAGAŻNIK NA ROWERY 1000ZŁ
+            //PODGRZEWANE FOTELE 3500ZŁ
+
+            return akcesoria;
         }
     }
 }
-

@@ -17,13 +17,13 @@ using System.Text;
 
 namespace SalonSamochodowy
 {
-    abstract class Opcje:Samochod //klasa opcje za pomoca ktorej bedzie dodawane wyposarzenie dodatkowe
+    public abstract class Opcje:Parametry //klasa opcje za pomoca ktorej bedzie dodawane wyposarzenie dodatkowe
     {
-        Samochod _samochod;
+        Parametry _samochod;
         public string _opcja;
         public decimal _cena;
 
-        public Opcje(Samochod samochod)
+        public Opcje(Parametry samochod)
         {
             _samochod = samochod;
         }
@@ -37,14 +37,61 @@ namespace SalonSamochodowy
         }
 
     }
-
+    public class Bialy : Opcje
+    {
+        public Bialy(Parametry _samochod) : base(_samochod)
+        {
+            _opcja = " Bialy Lakier";
+            _cena = 0;
+        }
+    }
     public class Czarny : Opcje
     {
-        public Czarny(Samochod _samochod) : base(_samochod)
+        public Czarny(Parametry _samochod) : base(_samochod)
         {
-            _name = "Czarny Lakier";
+            _opcja = " Czarny Lakier";
             _cena = 2000;
         }
     }
-    //ZROBIC ANALOGICZNIE DLA POZOSTAŁYCH OPCJI
+    public class Srebrny : Opcje
+    {
+        public Srebrny(Parametry _samochod) : base(_samochod)
+        {
+            _opcja = " Srebrny Lakier";
+            _cena = 3500;
+        }
+    }
+    public class Czerwony: Opcje
+    {
+        public Czerwony(Parametry _samochod) : base(_samochod)
+        {
+            _opcja = " Czerwony Lakier";
+            _cena = 5000;
+        }
+    }
+    public class OponyZimowe : Opcje
+    {
+        public OponyZimowe(Parametry _samochod) : base(_samochod)
+        {
+            _opcja = " Opony Zimowe";
+            _cena = 2000;
+        }
+    }
+    public class BagaznikNaRowery : Opcje
+    {
+        public BagaznikNaRowery(Parametry _samochod) : base(_samochod)
+        {
+            _opcja = " Bagażnik Na Rowery";
+            _cena = 1000;
+        }
+    }
+    public class PodgrzewaneFotele : Opcje
+    {
+        public PodgrzewaneFotele(Parametry _samochod) : base(_samochod)
+        {
+            _opcja = " Podgrzewane Fotele";
+            _cena = 3500;
+        }
+    }
+
 }

@@ -10,4 +10,3 @@ C:\Users\qubak\Documents\Uni\c#\WzorceProjektowe\ProjektWzorceProjektowe\SalonSa
 C:\Users\qubak\Documents\Uni\c#\WzorceProjektowe\ProjektWzorceProjektowe\SalonSamochodowy\SalonSamochodowy\obj\Debug\netcoreapp3.1\SalonSamochodowy.dll
 C:\Users\qubak\Documents\Uni\c#\WzorceProjektowe\ProjektWzorceProjektowe\SalonSamochodowy\SalonSamochodowy\obj\Debug\netcoreapp3.1\SalonSamochodowy.pdb
 C:\Users\qubak\Documents\Uni\c#\WzorceProjektowe\ProjektWzorceProjektowe\SalonSamochodowy\SalonSamochodowy\obj\Debug\netcoreapp3.1\SalonSamochodowy.genruntimeconfig.cache
-C:\Users\qubak\Documents\Uni\c#\WzorceProjektowe\ProjektWzorceProjektowe\SalonSamochodowy\SalonSamochodowy\obj\Debug\netcoreapp3.1\SalonSamochodowy.csprojAssemblyReference.cache

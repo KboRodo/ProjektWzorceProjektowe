@@ -2,23 +2,20 @@
 using System.Collections.Generic;
 using System.Text;
 
-//!!!!!
-//ZMIANA KONCEPCJI DO DO WYSWIETLANIA 
-//PRZEROBIĆ OVERRIDY PARAMATROW ZEBY BYŁY TAK JAK W PRZYPDAKU KOMBI- 2 METODY STRING I DECIMAL
 namespace SalonSamochodowy      //fabryka
 {
-    abstract class Parametry
+    public interface Parametry
     {
         public abstract string zwrocNazwa();
         public abstract decimal zwrocCena();  
     }
     class ParametryKombi : Parametry
     {
-        public override string zwrocNazwa()
+        public string zwrocNazwa()
         {
             return "Kombi";
         }
-        public override decimal zwrocCena()
+        public decimal zwrocCena()
         {
             return (90000);
         }
@@ -26,25 +23,37 @@ namespace SalonSamochodowy      //fabryka
 
     class ParametrySedan : Parametry
     {
-        public override string zwrocNazwa()
+        public string zwrocNazwa()
         {
-            return new string[] { "Papamobil", "213700" };
+            return "Papamobil";
+        }
+        public decimal zwrocCena()
+        {
+            return (21370);
         }
     }
 
     class ParametryVan : Parametry
     {
-        public override string[] zwroc()
+        public string zwrocNazwa()
         {
-            return new string[] { "Van", "70000" };
+            return "Van";
+        }
+        public decimal zwrocCena()
+        {
+            return (80000);
         }
     }
 
     class ParametrySuv : Parametry
     {
-        public override string[] zwroc()
+        public string zwrocNazwa()
         {
-            return new string[] { "Suv", "150000" };
+            return "Suv";
+        }
+        public decimal zwrocCena()
+        {
+            return (80000);
         }
     }
 }
