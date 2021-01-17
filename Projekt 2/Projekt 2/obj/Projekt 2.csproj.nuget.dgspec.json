@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\qubak\\Documents\\Uni\\c#\\WzorceProjektowe\\ProjektWzorceProjektowe\\SalonSamochodowy\\SalonSamochodowy\\SalonSamochodowy.csproj": {}
+    "C:\\Users\\qubak\\Documents\\Uni\\c#\\WzorceProjektowe\\ProjektWzorceProjektowe\\Projekt 2\\Projekt 2\\Projekt 2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\qubak\\Documents\\Uni\\c#\\WzorceProjektowe\\ProjektWzorceProjektowe\\SalonSamochodowy\\SalonSamochodowy\\SalonSamochodowy.csproj": {
+    "C:\\Users\\qubak\\Documents\\Uni\\c#\\WzorceProjektowe\\ProjektWzorceProjektowe\\Projekt 2\\Projekt 2\\Projekt 2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\qubak\\Documents\\Uni\\c#\\WzorceProjektowe\\ProjektWzorceProjektowe\\SalonSamochodowy\\SalonSamochodowy\\SalonSamochodowy.csproj",
-        "projectName": "SalonSamochodowy",
-        "projectPath": "C:\\Users\\qubak\\Documents\\Uni\\c#\\WzorceProjektowe\\ProjektWzorceProjektowe\\SalonSamochodowy\\SalonSamochodowy\\SalonSamochodowy.csproj",
+        "projectUniqueName": "C:\\Users\\qubak\\Documents\\Uni\\c#\\WzorceProjektowe\\ProjektWzorceProjektowe\\Projekt 2\\Projekt 2\\Projekt 2.csproj",
+        "projectName": "Projekt 2",
+        "projectPath": "C:\\Users\\qubak\\Documents\\Uni\\c#\\WzorceProjektowe\\ProjektWzorceProjektowe\\Projekt 2\\Projekt 2\\Projekt 2.csproj",
         "packagesPath": "C:\\Users\\qubak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\qubak\\Documents\\Uni\\c#\\WzorceProjektowe\\ProjektWzorceProjektowe\\SalonSamochodowy\\SalonSamochodowy\\obj\\",
+        "outputPath": "C:\\Users\\qubak\\Documents\\Uni\\c#\\WzorceProjektowe\\ProjektWzorceProjektowe\\Projekt 2\\Projekt 2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\qubak\\AppData\\Roaming\\NuGet\\NuGet.Config",
