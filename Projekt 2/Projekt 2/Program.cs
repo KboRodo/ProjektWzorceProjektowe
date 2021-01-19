@@ -74,11 +74,14 @@ namespace Projekt_2
 
             licznikdodatkowall++;
 
+            Console.Clear();
             Console.WriteLine($"Obecne zamówienie :{burgerZSosem.zwrocNazwa()}, cena:{burgerZSosem.zwrocCena()}zł");//podsumowanie
             l1.przetwarzaj(new Liczbadodatkow(licznikdodatkowall));
 
             stanZamowienia.ustawStan(new Zakonczenie());
             stanZamowienia.alert();
+
+            Console.ReadKey();
 
             #endregion wybieranie_burgera
         }
