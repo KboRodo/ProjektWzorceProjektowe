@@ -9,6 +9,7 @@ namespace Projekt_2
         IBurger _burger;
         public string _dodatki;
         public decimal _cena;
+        public int _liczbaSkladnikow;
 
         public Sklad(IBurger burger)
         {
@@ -52,7 +53,7 @@ namespace Projekt_2
     }
     #endregion Pieczywa
 
-    #region Mięsa
+    #region Miesa
     //Mieso (Wołowina - 1 PLN, Kurczak - 0,5 PLN, Wege - 2PLN, Jagniecina - 4PLN)
     public class Wolowina : Sklad
     {
@@ -78,18 +79,10 @@ namespace Projekt_2
             _cena = 2;
         }
     }
-    public class Jagniecina : Sklad
-    {
-        public Jagniecina(IBurger burger) : base(burger)
-        {
-            _dodatki = "Jagniecina";
-            _cena = 4;
-        }
-    }
-    #endregion Mięsa
+    #endregion Miesa 
 
     #region Dodatki
-    //Dodatki do burgera (Pomidor - 2PLN, Sałata - gratis, Cebula - 2PLN, Rukola - 6PLN)
+    //Dodatki do burgera (Pomidor - 2PLN, Sałata - gratis, Cebula - 2PLN)
     public class Pomidor : Sklad
     {
         public Pomidor(IBurger burger) : base(burger)
@@ -115,18 +108,10 @@ namespace Projekt_2
             _cena = 2;
         }
     }
-    public class Rukola : Sklad
-    {
-        public Rukola(IBurger burger) : base(burger)
-        {
-            _dodatki = "Rukola";
-            _cena = 6;
-        }
-    }
     #endregion Dodatki
 
     #region Sosy
-    //Sos Wyszystkie gratis (Sos BBQ ,Sos Czosnkowy , sos Teksański ,Ketchup )
+    //Sos Wyszystkie gratis (Sos BBQ ,Sos Czosnkowy , sos Teksański)
     public class BBQ : Sklad
     {
         public BBQ(IBurger burger) : base(burger)
@@ -151,14 +136,6 @@ namespace Projekt_2
             _cena = 0;
         }
     }
-public class Ketchup : Sklad
-{
-    public Ketchup(IBurger burger) : base(burger)
-    {
-        _dodatki = "Ketchup";
-        _cena = 0;
-    }
-}
 
     #endregion Sosy
 }

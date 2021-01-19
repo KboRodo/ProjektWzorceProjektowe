@@ -34,7 +34,7 @@ namespace Projekt_2
             Console.WriteLine("W trakcie wybierania...");
         }
     }
-    class WybieranieFrytki : StanZamowienia
+    class WybieranieReszty : StanZamowienia
     {
         public void alert()
         {
@@ -45,7 +45,7 @@ namespace Projekt_2
     {
         public void alert()
         {
-            Console.WriteLine("Odbieraj swoją kremówke albo widzimy się o 21:37 w wadowicach");
+            Console.WriteLine("Zamówienie jest gotowe do odbioru, dziękujemy za korztystanie z naszych usług");
         }
     }
 
